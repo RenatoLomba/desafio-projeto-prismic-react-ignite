@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document';
+import { repoName } from '../services/prismic';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -27,6 +28,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <script
+            async
+            defer
+            src={`https://static.cdn.prismic.io/prismic.js?new=true&repo=${repoName}`}
+          />
         </Head>
         <body>
           <Main />

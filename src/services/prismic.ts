@@ -9,3 +9,5 @@ export function getPrismicClient(req?: unknown): DefaultClient {
 
   return prismic;
 }
+
+export const repoName = 'project-prismic-ignite';

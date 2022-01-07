@@ -37,6 +37,13 @@
     }
   }
 
+  .lastUpdatedAt {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
   article {
     h2 {
       margin: 4rem 0;
